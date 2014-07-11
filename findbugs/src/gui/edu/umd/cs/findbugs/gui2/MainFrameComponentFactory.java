@@ -330,6 +330,7 @@ public class MainFrameComponentFactory implements Serializable {
             }
 
             //label.setText(link.toString());
+            textField.setText(link.toString());
         } else if (value instanceof BugAnnotationWithSourceLines) {
             BugAnnotationWithSourceLines note = (BugAnnotationWithSourceLines) value;
             final SourceLineAnnotation link = note.getSourceLines();
